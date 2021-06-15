@@ -4,3 +4,7 @@ library(tidyverse)
 
 # Load data
 data(iris)
+
+
+#checked dimenstions to Iris
+#HIIIII :)
