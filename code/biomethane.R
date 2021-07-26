@@ -861,8 +861,9 @@ ggsave("figures/mean_rmse.png" , height = 8 , width = 10 , units = "in")
 # Create tibble for R2 terms
 r_square <- r_stats %>%
   select(bottle , treatment , model , r_square)
-
+# Create vector for bottles
 bottle = unique(r_square$bottle)
+# Create R2 plot
 ggplot(data = r_square) +
   geom_raster(aes(x = model,
                   y = bottle,
